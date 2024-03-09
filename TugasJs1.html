@@ -1,0 +1,50 @@
+    <script>
+        let pegawai = "Ridwan";
+        let jabatan = "Manager";
+        let status = "Menikah";
+        
+        let gapok = 0;
+        switch(jabatan){
+            case "Manager" : gapok = 15000000; break;
+            case "Asisten Manager" : gapok = 10000000; break;
+            case "Staff" : gapok = 5000000; break;
+            default: gapok = 0;
+    }
+
+    let tunjangan = 0.15 * gapok;
+    let bpjs = 0.10 * gapok;
+    //ternary
+    let keluarga = (status == "Menikah") ? 0.20 * gapok : 0;
+    let total = gapok + tunjangan + bpjs + keluarga;
+
+    document.write("<h2 align='center'>Data Pegawai</h2>");
+    document.write("<table border='1' align='center'>");
+    document.write("<thead>");
+    document.write("<tr>");
+    document.write("<th>Data Pegawai</th>");
+    document.write("<th>Jabatan</th>");
+    document.write("<th>Status</th>");
+    document.write("<th>Tunjangan</th>");
+    document.write("<th>BPJS</th>");
+    document.write("<th>Tunjangan Keluarga</th>");
+    document.write("</tr>");
+    document.write("</thead>");
+    document.write("<tbody>");
+    document.write("<tr>");
+    document.write("<td>"+pegawai+"</td>");
+    document.write("<td>"+jabatan+"</td>");
+    document.write("<td>"+status+"</td>");
+    document.write("<td>"+tunjangan+"</td>");
+    document.write("<td>"+bpjs+"</td>");
+    document.write("<td>"+keluarga+"</td>");
+    document.write("</tr>");
+    document.write("</tbody>");
+    document.write("<tfoot>");
+    document.write("<tr>");
+    document.write("<td colspan='5'>Total Gaji</td>");
+    document.write("<td>"+total+"</td>");
+    document.write("</tr>");
+    document.write("</tfoot>");
+    document.write("</table>");
+
+    </script>    
