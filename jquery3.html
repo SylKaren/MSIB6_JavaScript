@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handler</title>
+    <link rel="stylesheet" href="../css/style1.css">
+</head>
+<body>
+    <h2>Letakan Kursor ke Masing - Masing Kotak Untuk Melihat Gambar</h2>
+    <div id="div1">
+        Hewan Rubah
+        <audio id="audio1" src="fox_sound.mp3"></audio>
+    </div>
+    <div id="div2">
+        Hewan Kucing
+        <audio id="audio2" src="cat_sound.mp3"></audio>
+    </div>
+    <div id="div3">
+        Hewan Merak
+        <audio id="audio3" src="peacock_sound.m4a"></audio>
+    </div>
+
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#div1").mouseover(function(){
+                $(this).css({
+                    background: "url('https://64.media.tumblr.com/b7b727eb27f70a9de5218ff5d4db2ef0/eaaba2b382629f84-36/s1280x1920/cd008d64cb436250e246633cab4f4f3e3c4e6fbf.png')"
+                });
+                document.getElementById("audio1").play();
+            });
+            $("#div2").mouseover(function(){
+                $(this).css({
+                    background: "url('https://cdna.artstation.com/p/assets/images/images/042/547/876/large/toganawa-e0tcnu5vkao1mwk.jpg?1634801886')"
+                });
+                document.getElementById("audio2").play();
+            });
+            $("#div3").mouseover(function(){
+                $(this).css({
+                    background: "url('https://wallpapercave.com/wp/wp8927224.png')"
+                });
+                document.getElementById("audio3").play();
+            });
+            $("div").mouseout(function(){
+                $(this).css({
+                    background: "greenyellow"
+                });
+            });
+        });
+    </script>
+</body>
+</html>

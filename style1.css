@@ -1,0 +1,41 @@
+body{
+    text-align: center;
+    margin: auto;
+    background-color: antiquewhite;
+}
+#div1{
+    display: inline-block;
+    margin: auto;
+    width: 80%;
+    color: aqua;
+    border: 3px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background: greenyellow;
+    height: 400px;
+    cursor: pointer;
+}
+#div2{
+    display: inline-block;
+    margin: auto;
+    width: 80%;
+    color: aqua;
+    border: 3px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background: greenyellow;
+    height: 400px;
+    cursor: pointer;
+}
+#div3{
+    display: inline-block;
+    margin: auto;
+    width: 80%;
+    color: aqua;
+    border: 3px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background: greenyellow;
+    height: 400px;
+    cursor: pointer;
+}
